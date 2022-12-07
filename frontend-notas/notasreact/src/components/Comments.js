@@ -16,6 +16,7 @@ const Comments =()=>{
 
 
   //Obtenemos los comments
+  console.log("19 Comments.js comments.length: "+comments.length)
   const getComments=()=>{
     axios.get(url + 'comments').then(res=>{
       setComments(res.data.comments)

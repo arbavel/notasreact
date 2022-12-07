@@ -37,11 +37,11 @@ const New = () => {
     e.preventDefault();
 
     changeState()
-    console.log("url en New.js 39: " + url)
+    //console.log("url en New.js 39: " + url)
     //Petición HTTP por POST para guardar el artículo:
     axios.post(url + 'saveA', article).then(res=>{
       setRedirect(true)
-      console.log("en New.js 44: "+res.data);
+      //console.log("en New.js 44: "+res.data);
     })
   }
 

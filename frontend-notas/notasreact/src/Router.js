@@ -8,6 +8,9 @@ import Comments from './components/Comments'
 
 
 const Router = ()=>{
+
+console.log("Router ")
+
   return(
     <BrowserRouter>
 

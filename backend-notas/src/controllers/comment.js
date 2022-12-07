@@ -41,6 +41,8 @@ var controller = {
   //Método para listar los comentarios:
 
   getComments: (req, res) => {
+
+    console.log("controller/comments.js")
     var query = Comment.find({})
 
     query.sort('-date').exec((err, comments)=>{

@@ -8,6 +8,8 @@ var router = express.Router()
 
 //Rutas para los comments:
 
+console.log("Rutas para los comments: routes/comments.js ")
+
 router.post('/saveC', Comment.save)
 
 router.get('/comments', Comment.getComments)
