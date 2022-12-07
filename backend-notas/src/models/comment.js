@@ -5,6 +5,7 @@ var Schema = mongoose.Schema
 
 var CommentSchema = new Schema({
   articletitle: String,
+  articleId: String,
   date: {type:Date, default: Date.now},
   contentC: String,
   authorC: String

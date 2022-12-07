@@ -10,7 +10,7 @@ var router = express.Router()
 
 router.post('/saveC', Comment.save)
 
-router.get('/commentsC', Comment.getComments)
+router.get('/comments', Comment.getComments)
 
 router.delete('/deleteC/:id', Comment.delete)
 

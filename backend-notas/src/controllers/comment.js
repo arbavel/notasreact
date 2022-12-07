@@ -15,6 +15,7 @@ var controller = {
     var comment = new Comment()
     //Asignamos los valores:
     comment.articletitle = params.articletitle
+    comment.articleId = params.articleId
     comment.contentC = params.contentC
     comment.authorC = params.authorC
     //Guardamos el comentario

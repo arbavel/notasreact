@@ -8,7 +8,7 @@ var controller = {
 
   //Método para guardar un artículo:
 
-  save: (req, res) => {
+  saveA: (req, res) => {
     var params = req.body;
 
     var article = new Article();
@@ -52,7 +52,7 @@ var controller = {
       if(!articles){
         return res.status(404).send({
           status: 'error',
-          message: 'Nohay artículos para mostrar'
+          message: 'No hay artículos para mostrar'
         })
       }
 
@@ -66,7 +66,7 @@ var controller = {
 
   //Método para eliminar un artículo
 
-  delete: (req, res)=>{
+  deleteA: (req, res)=>{
     // Recoger el id a través de la url:
     var articleId = req.params.id;
 

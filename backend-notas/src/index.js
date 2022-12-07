@@ -10,6 +10,7 @@ const app = express()
 
 const port = 3900
 
+//collection: api_rest_reactnotas
 var url = 'mongodb://127.0.0.1:27017/api_rest_reactnotas';
 
 mongoose.Promise = global.Promise;
@@ -32,7 +33,7 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use('/api', article_routes);
+app.use('/apiA', article_routes);
 app.use('/apiC', comment_routes);
 
 mongoose.connect(url, {useNewUrlParser: true}).then(()=>{

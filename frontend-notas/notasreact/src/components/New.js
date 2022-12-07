@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Navigate } from 'react-router-dom'
-import Global from '../Global'
+import GlobalA from '../GlobalA'
 
 const New = () => {
 
-  const url = Global.url
+  const url = GlobalA.url
 
   const [article, setArticle] = useState({
     title: null,
@@ -29,7 +29,7 @@ const New = () => {
       content: contentRef.current.value,
       author: authorRef.current.value
     });
-    console.log("estamos: " + article);
+    console.log("estamos en new.js 32:  " + article);
   }
 
   const sendData = (e)=>{
@@ -37,15 +37,16 @@ const New = () => {
     e.preventDefault();
 
     changeState()
-    console.log("url: " + url)
+    console.log("url en New.js 39: " + url)
     //Petición HTTP por POST para guardar el artículo:
-    axios.post(url + 'save', article).then(res=>{
+    axios.post(url + 'saveA', article).then(res=>{
       setRedirect(true)
-      console.log(res.data);
+      console.log("en New.js 44: "+res.data);
     })
   }
 
   if(redirect){
+    console.log("en New.js 49: " + url)
     return <Navigate to="articles" />
   }
 
@@ -70,6 +71,7 @@ const New = () => {
               <input type="text" className="form-control" id="title" name="title" ref={titleRef} onChange={changeState} required />
 
             </div>
+            
 
             <div className="mb-3">
               <label htmlFor="">Contenido</label>

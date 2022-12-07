@@ -1,13 +1,13 @@
 
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import Global from '../Global'
+import GlobalA from '../GlobalA'
 import Article from './Article'
 
 const Articles =()=>{
 
   const [articles, setArticles] = useState([])
-  const url = Global.url
+  const url = GlobalA.url
 
   useEffect(() => {
     getArticles()
@@ -26,7 +26,7 @@ const Articles =()=>{
   //Eliminamos un artículo a través de su id:
   const deleteArticle=(id)=>{
     const idArticle=articles[id]._id
-    axios.delete(url + "delete/" + idArticle).then(res => {
+    axios.delete(url + "deleteA/" + idArticle).then(res => {
       getArticles()
     })
   }
