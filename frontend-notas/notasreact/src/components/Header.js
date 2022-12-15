@@ -9,11 +9,11 @@ const Header = () => {
     <nav id="navbar" className="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <div className="container">
-        <NavLink to="A" className="navbar-brans">
-          <img className='App-logo' src={logo} alt='logo' width='80' />
+        <NavLink to="A" className="navbar-brans">crear
+          <img className='App-logo' src={logo} alt='logo' width='40' />artículo
         </NavLink>
-        <NavLink to="C" id='com' className="navbar-brans">
-          <img className='App-logo' src={logo} alt='logo' width='80' />
+        <NavLink to="C" id='com' className="navbar-brans">crear
+          <img className='App-logo' src={logo} alt='logo' width='40' />comentario
         </NavLink>
         <ul className='navbar-nav'>
           <li className='nav-item'>

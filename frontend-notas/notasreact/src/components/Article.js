@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 const Article = ({ id, articleData, delArticle }) => {
 
   const { title, _id, date, content, author } = articleData
@@ -33,9 +33,13 @@ const Article = ({ id, articleData, delArticle }) => {
           <button className="btn btn-danger btn-sm " type="button" onClick={del}>Eliminar</button>
         </div>
 
-        <div className="card-footer">
+        {/* <div className="card-footer">
           <button className="btn btn-danger btn-sm " type="button" >comments</button>
-        </div>
+        </div> */}
+
+        <Link to={`/Verarticle/${_id}`}><li className="btn btn-info">Ver</li></Link>
+
+
 
       </div>
     </div>

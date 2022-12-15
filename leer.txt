@@ -1,2 +1,57 @@
 Codenautas
 https://www.youtube.com/watch?v=a25KhsMZepY
+
+proyecto en E:\proyectos\notasreact
+
+carpeta backend-notas
+	npm init -y
+	npm i express
+	npm i mongoose
+	npm i nodemon -D
+	npm i body-parser
+	
+en package.json escribimos script :	para poder correr el backend con npm start
+	"start": "nodemon src/index.js"
+	
+npm install -g npm@latest
+npm install -g create-react-app
+
+
+carpeta frontend-notas / notasreact
+	npm i axios
+	npm i react-router-dom
+	
+	en public/index.html anexar el link de cdn bootstrap css
+	
+
+
+backend-notas
+	src
+		controllers
+			article.js
+		models
+			article.js
+		routes
+			article.js
+		index.js
+		
+frontend-notas/notasreact
+	public
+	src
+		assets
+			css
+				App.css
+				index.css
+			images
+				logo.svg
+		components
+			Article.js
+			Articles.js
+			Header.js
+			New.js
+		App.js
+		Global.js
+		index.js
+		Router.js
+
+.gitignore

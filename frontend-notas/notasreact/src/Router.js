@@ -4,17 +4,21 @@ import Header from './components/Header'
 import New from './components/New'
 import NewC from './components/NewC'
 import Articles from './components/Articles'
-import Comments from './components/Comments'
+import VerArticle from './components/Articles'
+import Verarticle from './Verarticle'
+import Comments from './components/VerArticle'
+import { MenuConceptos } from './MenuConceptos'
 
 
-const Router = ()=>{
+const Router = () => {
 
-console.log("Router ")
+  console.log("Router ")
 
-  return(
+  return (
     <BrowserRouter>
 
       <Header />
+      <MenuConceptos />
 
       <Routes>
 
@@ -22,7 +26,8 @@ console.log("Router ")
         <Route exact path='/C' element={<NewC />} />
         <Route exact path='/A/articles' element={<Articles />} />
         <Route exact path='/C/comments' element={<Comments />} />
-        
+        <Route exact path='/Verarticle/:id' element={<Verarticle />} />
+
       </Routes>
 
     </BrowserRouter>
