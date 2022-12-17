@@ -12,6 +12,7 @@ const New = () => {
     title: null,
     content: null,
     author: null,
+    photo: null
   })
 
   const [redirect, setRedirect] = useState(false)
@@ -21,13 +22,15 @@ const New = () => {
   let titleRef = React.createRef()
   let contentRef = React.createRef()
   let authorRef = React.createRef()
+  let photoRef = React.createRef()
 
   const changeState = () => {
 
     setArticle({
       title: titleRef.current.value,
       content: contentRef.current.value,
-      author: authorRef.current.value
+      author: authorRef.current.value,
+      photo: photoRef.current.value
     });
     console.log("estamos en new.js 32:  " + article);
   }
@@ -82,6 +85,15 @@ const New = () => {
               <label htmlFor="">Autor</label>
               <input type="text" className="form-control" id="autor" name="autor" ref={authorRef} onChange={changeState} required />
             </div>
+
+
+
+            <div className="mb-3">
+              <label htmlFor="">Foto</label>
+              <input type="text" className="form-control" id="photo" name="photo" ref={photoRef} onChange={changeState} required />
+            </div>
+
+
 
             <div className="mb-3">
               <input type="submit" className="form-control btn btn-primary" id="publish" value="Publicar" />

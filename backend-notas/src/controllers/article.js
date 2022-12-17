@@ -16,6 +16,7 @@ var controller = {
     article.title = params.title;
     article.content = params.content;
     article.author = params.author;
+    article.photo = params.photo;
     //Guardamos el artículo
     article.save((err, articleStored)=>{
 
