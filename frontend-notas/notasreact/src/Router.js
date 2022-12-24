@@ -7,7 +7,7 @@ import Articles from './components/Articles'
 //import VerArticle from './components/Articles'
 //import Verarticle from './Verarticle'
 import Comments from './components/Comments'
-import { MenuConceptos } from './MenuConceptos'
+//import { MenuConceptos } from './MenuConceptos'
 
 
 const Router = () => {
@@ -18,7 +18,7 @@ const Router = () => {
     <BrowserRouter>
 
       <Header />
-      <MenuConceptos />
+      {/* <MenuConceptos /> */}
 
       <Routes>
 

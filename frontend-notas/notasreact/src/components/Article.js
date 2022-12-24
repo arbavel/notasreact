@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+//import { Link } from "react-router-dom"
 
 import logo2 from './imagenes/futbol.jpg'
 import logo from './imagenes/futbolam.jpg'
@@ -64,7 +64,7 @@ const Article = ({ id, articleData, delArticle }) => {
           <button className="btn btn-danger btn-sm " type="button" >comments</button>
         </div> */}
 
-        <Link to={`/Verarticle/${_id}`}><li className="btn btn-info">Ver</li></Link>
+        {/* <Link to={`/Verarticle/${_id}`}><li className="btn btn-info">Ver</li></Link> */}
 
 
 
